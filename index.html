@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- displays site properly based on user's device -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+          rel="stylesheet">
+    <link href="index.css" rel="stylesheet" type="text/css"/>
+    <script src="index.js" type="text/javascript"></script>
+    <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+<body>
+<div  class="background-color">
+    <div class="header">
+        <div class="header-left">
+            <h2>snap</h2>
+            <div class="features">
+                <div class="features-icon">
+                    <p>Features</p>
+                    <img alt="Arrow_down" class="features-icon" onclick="featuresDropFunction()"
+                         src="/images/icon-arrow-down.svg">
+                </div>
+                <div class="features-dropdown">
+                    <div class="features-dropdown-content" id="featuresDropDown">
+                        <a href="#todo"><img alt="TODO" src="/images/icon-todo.svg">
+                            <h4>Todo List</h4></a>
+                        <a href="#cal"><img alt="CAL" src="/images/icon-calendar.svg">
+                            <h4>Calender</h4></a>
+                        <a href="#remainder"><img alt="Rem" src="/images/icon-reminders.svg">
+                            <h4>Remainders</h4></a>
+                        <a href="plan"><img alt="Plan" src="/images/icon-planning.svg">
+                            <h4>Planning</h4></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="company">
+                <div class="company-icon">
+                    <p>Company </p>
+                    <img alt="Arrow_up" class="company-icon" onclick="companyDropFunction()"
+                         src="images/icon-arrow-up.svg">
+                </div>
+                <div class="company-dropdown">
+                    <div class="company-dropdown-content" id="companyDropDown">
+                        <h4>History</h4>
+                        <h4>Our Team</h4>
+                        <h4>Blog</h4>
+                    </div>
+                </div>
+            </div>
+            <p>Careers</p>
+            <p>About</p>
+        </div>
+        <div class="header-right">
+             <div class="login-register">
+                <p>Login</p>
+                <button>Register</button>
+             </div>
+            <div class="mobile-menu-icon"> <img onclick="mobileDropFunction()"
+                                                src="/images/icon-menu.svg" alt=""></div>
+        </div>
+
+    </div>
+    <div class="mobile-hero-image">
+        <img alt="Mobile_Hero" src="/images/image-hero-mobile.png">
+    </div>
+
+    <div class="mobile-menu-expanded">
+        <div class="mobile-menu-content" id="mobileMenuExpanded">
+            <a href="javascript:void(0)" class="close-button" onclick="closeMobileDrop()">&times;</a>
+            <div class="features-mobile">
+                <p>Features <img alt="Arrow_Down" src="/images/icon-arrow-down.svg"></p>
+                <span>
+                                <p><img alt="" src="/images/icon-todo.svg"> Todo List</p>
+                                <p><img alt="" src="/images/icon-calendar.svg"> Calender</p>
+                                <p><img alt="" src="/images/icon-reminders.svg"> Remainders</p>
+                                <p> <img alt="" src="/images/icon-planning.svg"> Planning</p>
+                                </span>
+            </div>
+            <div class="company-mobile">
+                <p>Company <img alt="Arrow_Up" src="/images/icon-arrow-up.svg"></p>
+                <small>History</small>
+                <small>Our Team</small>
+                <small>Blog</small>
+            </div>
+            <h5>Career</h5>
+            <h5>About</h5>
+            <div class="auth">
+                <p>Login</p>
+                <button>Register</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-words">
+        <div class="make-remote">
+            <h1>Make remote work</h1>
+            <p>Get your team in sync, no matter your location. Streamline processes,
+                create team rituals, and watch productivity soar.
+            </p>
+            <button>Learn more</button>
+
+            <span>
+                                        <img alt="Data" src="/images/client-databiz.svg">
+                                        <img alt="Audiophile" src="/images/client-audiophile.svg">
+                                        <img alt="Meet" src="/images/client-meet.svg">
+                                        <img alt=" Maker" src="/images/client-maker.svg">
+                                    </span>
+        </div>
+        <div class="hero-icon">
+            <img alt="Hero_icon" src="/images/image-hero-desktop.png">
+        </div>
+    </div>
+
+</div>
+<!--                    <script>-->
+<!--                       -->
+<!--                        -->
+<!--                    </script>-->
+<!--  Features-->
+<!--  Company-->
+<!--  Careers-->
+<!--  About-->
+
+<!--  Login-->
+<!--  Register-->
+
+<!--  Make remote work-->
+
+<!--  Get your team in sync, no matter your location. Streamline processes, -->
+<!--  create team rituals, and watch productivity soar.-->
+
+<!--  Learn more-->
+<!--  -->
+<!--  <div class="attribution">-->
+<!--    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. -->
+<!--    Coded by <a href="#">Your Name Here</a>.-->
+<!--  </div>-->
+</body>
+</html>
